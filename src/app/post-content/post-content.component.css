@@ -1,0 +1,11 @@
+.align-right {
+  text-align: right;
+}
+.border-bottom {
+  border-bottom: #424f57 1px solid;
+}
+.nav-btn {
+  width: 20%;
+  margin: auto;
+  justify-content: center;
+}

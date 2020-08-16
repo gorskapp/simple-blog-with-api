@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
+
+import { SinglePostComponent } from './single-post/single-post.component';
+import { RouterModule } from '@angular/router';
+import { PostContentComponent } from './post-content/post-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SinglePostComponent,
+    PostContentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    RouterModule,
+    NgxPaginationModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
